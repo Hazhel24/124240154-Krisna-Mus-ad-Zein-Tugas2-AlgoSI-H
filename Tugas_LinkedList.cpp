@@ -145,6 +145,11 @@ void cari_data()
 void hapus_data()
 {
     bool found = false;
+    if (head == nullptr)
+    {
+        cout << "Data kosong" << '\n';
+        return;
+    }
     cout << "Masukkan Nomer Antrian yang ingin dihapus: ";
     cin >> newNode->nomer_antrian;
     temp = head;
