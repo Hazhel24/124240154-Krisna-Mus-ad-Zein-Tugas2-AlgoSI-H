@@ -56,7 +56,6 @@ void tambah_data()
         }
         newNode->kanan = bantu;
         newNode->kiri = bantu->kiri;
-        bantu->kiri != nullptr;
         bantu->kiri->kanan = newNode;
         bantu->kiri = newNode;
     }
