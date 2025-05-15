@@ -116,20 +116,20 @@ void cari_data()
         cout << "Data kosong" << '\n';
         return;
     }
+    int cari_data;
     cout << "Masukkan Nomer Antrian yang dicari: ";
-    cin >> newNode->nomer_antrian;
+    cin >> cari_data;
     temp = head;
-    cout << "Pasian ditemukan" << '\n';
-    cout << "=== Data Antrian Pasien yang dicari ===" << '\n';
-    cout << "====================================" << '\n';
     while (temp != nullptr)
     {
-        if (temp->nomer_antrian == newNode->nomer_antrian)
+        if (temp->nomer_antrian == cari_data)
         {
+            cout << "Pasian ditemukan" << '\n';
+            cout << "=== Data Antrian Pasien yang dicari ===" << '\n';
+            cout << "====================================" << '\n';
             cout << "Nomer Antrian: " << temp->nomer_antrian << '\n';
             cout << "Nama Pasien: " << temp->nama_pasien << '\n';
             cout << "Keluhan: " << temp->keluhan << '\n';
-            break;
             found = true;
         }
         temp = temp->kanan;
